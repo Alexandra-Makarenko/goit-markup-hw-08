@@ -1,0 +1,76 @@
+.footer{
+    background-color: $footer-color;
+    height: 250px;
+    padding-top: 60px;
+}
+.logo__web--footer{
+    color: $main-color;
+}
+.footer__address{
+    margin-top: 20px;
+    margin-right: 70px;
+}
+.footer__link{
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--address{
+        color: $main-color;
+    }
+    &:hover,&:focus{
+        color: $accent-color;
+    }
+}
+.footer__item:not(:last-child){
+        margin-bottom: 9px;
+}
+.footer__contacts{
+    display: flex;
+    align-items: baseline;
+}
+
+.join__title{
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: $main-color;
+    margin-bottom: 20px;
+}
+
+.social__network--footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social__icon--footer{
+    fill: $main-color;
+    
+}
+.button--footer{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow{
+    margin-left: auto;
+}
+.follow__input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+    margin-right: 12px;
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.social__icon--follow{
+    margin-left: 10px;
+}
