@@ -1,14 +1,11 @@
+
 .section--no-padding-top{
-    padding-top: 0;
+    padding-top: 0px;
+    @media screen and (max-width:1200px) {      
+    display: none;
+    }
 }
-.section__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    
-    color:$bold-text-color;
-}
+
 .work{
     display: flex;
     margin-top: 50px;
