@@ -48,19 +48,26 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    }    
+    @media screen and (max-width:1199px){
+        justify-content: center;
     }
-    
+    @media screen and (min-width:1200px){
+        flex-wrap: nowrap;
+    }
 }
 .join{
     @media screen and (min-width:768px){
-        margin-left: auto;
+        margin-left: 165px;
     }
     @media screen and (max-width:1199px) {
         margin-bottom: 60px;
     }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        }
+    
 }
-
 .join__title{
     font-weight: 700;
     line-height: 1.14;
@@ -75,22 +82,23 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 .social__icon--footer{
-    fill: $main-color;
-    
+    fill: $main-color;    
 }
 .button--footer{
-    display: block;
+    display: flex;
     margin: 0 auto;
-    @media screen and (min-width:1200px){
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width:1200px) {
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 .follow{
+    @media screen and (max-width:1199px){
     margin: 0 auto;
-    @media screen and (min-width:1200px) {
-    margin-left: auto;
+    }    
+    @media screen and (min-width:1200px){
+        margin-left: auto;
     }
   }
 .follow__input{
