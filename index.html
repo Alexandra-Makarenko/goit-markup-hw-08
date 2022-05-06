@@ -22,33 +22,44 @@
         <a lang="en" class="logo" href="./index.html">
             Web<span class="logo__web">Studio</span>
         </a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
-                <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-            </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon">
-                        <use href="./images/icons.svg#icon-envelope">
-                        </use>
-                    </svg>info@devstudio.com</a></li>
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon">
-                    <use href="./images/icons.svg#icon-smartphone">
-                    </use>
-                </svg>+38 096 111 11 11</a></li>
-            </ul>  
+        
             <button type="button" class="button-menu" data-menu-button>
                 <svg width="40" height="40" aria-label="Menu">
                     <use class="button-menu__open" href="./images/icons.svg#icon-menu_40px-1"></use>
                     <use class="button-menu__close" href="./images/icons.svg#icon-close_40px-1"></use>
                 </svg>
-            </button>  
+            </button>
+                <div class="menu" data-menu>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">                   
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
+                            <svg class="contacts__icon">
+                                <use href="./images/icons.svg#icon-smartphone">
+                                </use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon">
+                                <use href="./images/icons.svg#icon-envelope">
+                                </use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="socials">
+                    <li class="socials__item"><a class="socials__link" href="">Instagram</a></li>
+                    <li class="socials__item"><a class="socials__link" href="">Tweeter</a></li>
+                    <li class="socials__item"><a class="socials__link" href="">Facebook</a></li>
+                    <li class="socials__item"><a class="socials__link" href="">LinkedIn</a></li>
+                </ul>
+                </div>
             </div>
         </header>
     <main>
@@ -187,12 +198,12 @@
                 <li class="team__item">
                     <picture>
                     <source media="screen and (min-width: 1200px)"
-                        srcset="./images/team-first-desktop.jpg, /images/team-first-desktop-2x.jpg 2x">
+                        srcset="./images/team-second-desktop.jpg, /images/team-second-desktop-2x.jpg 2x">
                     <source media="screen and (min-width: 768px)"
-                        srcset="./images/team-first-tablet.jpg, /images/team-first-tablet-2x.jpg 2x">
+                        srcset="./images/team-second-tablet.jpg, /images/team-second-tablet-2x.jpg 2x">
                     <source media="screen and (max-width: 767px)"
-                        srcset="./images/team-first-mobile.jpg, /images/team-first-mobile-2x.jpg 2x">
-                    <img src="./images/team-first-mobile.jpg" alt="Ольга Репина" />
+                        srcset="./images/team-second-mobile.jpg, /images/team-second-mobile-2x.jpg 2x">
+                    <img src="./images/team-second-mobile.jpg" alt="Ольга Репина" />
                     
                     </picture>
                     <div class="team__desk">
@@ -237,12 +248,12 @@
                 <li class="team__item">
                     <picture>
                     <source media="screen and (min-width: 1200px)"
-                        srcset="./images/team-first-desktop.jpg, /images/team-first-desktop-2x.jpg 2x">
+                        srcset="./images/team-third-desktop.jpg, /images/team-third-desktop-2x.jpg 2x">
                     <source media="screen and (min-width: 768px)"
-                        srcset="./images/team-first-tablet.jpg, /images/team-first-tablet-2x.jpg 2x">
+                        srcset="./images/team-third-tablet.jpg, /images/team-third-tablet-2x.jpg 2x">
                     <source media="screen and (max-width: 767px)"
-                        srcset="./images/team-first-mobile.jpg, /images/team-first-mobile-2x.jpg 2x">
-                    <img src="./images/team-first-mobile.jpg" alt="Николай Тарасов" />
+                        srcset="./images/team-third-mobile.jpg, /images/team-third-mobile-2x.jpg 2x">
+                    <img src="./images/team-third-mobile.jpg" alt="Николай Тарасов" />
                     
                     </picture>
                     <div class="team__desk">
@@ -287,12 +298,12 @@
                 <li class="team__item">
                     <picture>
                         <source media="screen and (min-width: 1200px)"
-                            srcset="./images/team-first-desktop.jpg, /images/team-first-desktop-2x.jpg 2x">
+                            srcset="./images/team-fourth-desktop.jpg, /images/team-fourth-desktop-2x.jpg 2x">
                         <source media="screen and (min-width: 768px)"
-                            srcset="./images/team-first-tablet.jpg, /images/team-first-tablet-2x.jpg 2x">
+                            srcset="./images/team-fourth-tablet.jpg, /images/team-fourth-tablet-2x.jpg 2x">
                         <source media="screen and (max-width: 767px)"
-                            srcset="./images/team-first-mobile.jpg, /images/team-first-mobile-2x.jpg 2x">
-                        <img src="./images/team-first-mobile.jpg" alt="Михаил Ермаков" />
+                            srcset="./images/team-fourth-mobile.jpg, /images/team-fourth-mobile-2x.jpg 2x">
+                        <img src="./images/team-fourth-mobile.jpg" alt="Михаил Ермаков" />
                     
                     </picture>
                     <div class="team__desk">
