@@ -38,6 +38,7 @@
   display: flex;
   align-items: baseline;
   @media screen and (max-width: 767px){
+    position: relative;
     height: 60px;
     align-items: center;
   }
