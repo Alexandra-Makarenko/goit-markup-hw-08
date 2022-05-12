@@ -1,21 +1,32 @@
-.footer{
-  
-    background-color: $footer-color;
-   
+.footer{  
+    background-color: $footer-color;   
+}
+.footer__container {  
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    @media screen and (max-width:1199px) {
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+        
+    }
 }
 .logo__web--footer{
     color: $main-color;
     margin-bottom: 20px;
 }
 .footer__address{
-    margin-top: 20px;
-    @media screen and (max-width:1199px){
-     margin-bottom: 60px;
-    }
-       @media screen and (min-width:1200px){
-        margin-right: 70px;        
-    }
-   
+    margin-top: 20px;   
 }
 .footer__link{
     font-style: normal;
@@ -26,6 +37,9 @@
     &:hover,&:focus{
         color: $accent-color;
     }
+    &:visited{
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 .footer__link--address {
     color: $main-color;
@@ -33,33 +47,8 @@
 .footer__item:not(:last-child){
         margin-bottom: 9px;
 }
-.footer__container{
-    display: block;
-    
-    @media screen and (min-width:768px){
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    }    
-    @media screen and (max-width:1199px){
-        justify-content: center;
-    }
-    @media screen and (min-width:1200px){
-        flex-wrap: nowrap;
-    }
-}
-.join{
-    @media screen and (min-width:768px){
-        margin-left: 165px;
-    }
-    @media screen and (max-width:1199px) {
-        margin-bottom: 60px;
-    }
-    @media screen and (min-width:1200px) {
-        margin-left: 70px;
-        }
-    
-}
+
+
 .join__title{
     font-weight: 700;
     line-height: 1.14;
@@ -85,16 +74,25 @@
         display: inline-flex;
     }
 }
+.join{
+    @media screen and (max-width:767px){
+        margin-top: 60px;
+    }
+    @media screen and (min-width:1200px){
+        margin-left: 70px;
+        margin-right: auto;
+    }
+}
 .follow{
     @media screen and (max-width:1199px){
-    margin: 0 auto;
-    }    
-    @media screen and (min-width:1200px){
-        margin-left: auto;
+margin-top: 60px;
     }
+     
+  
   }
 .follow__input{
     height: 50px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: inherit;
@@ -107,8 +105,14 @@
         
         color: rgba(255, 255, 255, 0.6);
     }
+    @media screen and (min-width:768px){
+        width: 450px;
+    }
     @media screen and (max-width:1199px){
         margin-bottom: 20px;
+    }
+    @media screen and (min-width:1200px){
+        width: 358px;
     }
 }
 .social__icon--follow{
