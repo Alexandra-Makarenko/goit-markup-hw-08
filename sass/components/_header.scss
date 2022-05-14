@@ -5,25 +5,31 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
   @media screen and (max-width: 767px) {
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
+      height: 80px;
+      
+  }
+}
+.container--flex{
+@media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    height: 80px;
+
   }
 }
 .menu{
   @media screen and (max-width: 767px){
   display: none;
   }
-  @media screen and (min-width: 768px){
-    display: inline-flex;
-  }
- 
+@media screen and (min-width: 768px){
+  margin-left: auto;
+}
   &.is-open{
     @media screen and (max-width: 767px) {
       display: block;
@@ -41,19 +47,15 @@
   }
 
 }
-.menu-container{
-  display: flex; 
-  
+.menu-container{  
+  display: flex;
     @media screen and (max-width: 767px){
       flex-direction: column;
       height: 100%;
       overflow: auto;
     }
-      @media screen and (min-width: 768px) {
-        margin-left: 50px;
-      }
- 
-}
+
+   }
 
 .menu-open-btn,
 .menu-close-btn {
@@ -77,13 +79,20 @@
   
  
 }
+.nav{
+  @media screen and (min-width: 768px){
+margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-right: 305px;
+  }
+}
 
 .nav__list {
   display: block; 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+@media screen and (min-width: 768px){
+  display: flex;
+}
 }
 
 .nav__link{
@@ -132,7 +141,7 @@
 @media screen and (max-width: 767px){
 margin-top: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   margin-left: 50px;
 }
      
@@ -141,26 +150,26 @@ margin-top: 32px;
 
   
 .contact-menu{
-  @media screen and (max-width: 767px){
-  margin-top: auto;
-  }
+    margin-top: auto;
  
-
+  @media screen and (min-width: 768px){
+  margin-bottom: auto;
+  }
 }
 
-.contacts {
-  display: block;
+.contacts { 
   @media screen and (max-width: 767px){
-    
+    display: block;
     margin-bottom: 64px;
   }
-  @media screen and (min-width: 768px){
-    display: inline-flex;
-    flex-direction: column-reverse;
-    align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;      
   }
- 
-  
+   
+  @media screen and (min-width: 1200px){
+   flex-direction: row-reverse;
+  }
 }
 
 .contacts__icon {
@@ -176,11 +185,20 @@ margin-top: 32px;
 .contacts__item {
 
   &:not(:first-child) {
+    @media screen and (max-width: 767px){
     margin-top: 32px;
-      @media screen and (min-width: 768px){
-        margin-top: 10px;
-      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
+  &:not(:last-child){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-top: 10px;
+    }
+   
+  }
+  
 }
 
 .contacts__link {
@@ -195,18 +213,16 @@ margin-top: 32px;
   color: $main-text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &.contacts__link--tel{
-    color: $accent-color;
-   
-    @media screen and (min-width: 480px){
+  &.contacts__link--tel{      
+    @media screen and (min-width: 480px) and (max-width:767px){
       font-size: 34px;
       line-height: 1.17;
+    
     }
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.16;
-      color: $main-text-color;
+    @media screen and (max-width:767px){
+     color: $accent-color;
     }
+   
  }
   &:visited {
     color: $main-text-color;
@@ -217,10 +233,15 @@ margin-top: 32px;
     color: $accent-color;
     fill: $accent-color;
   }
-    @media screen and (min-width: 768px){
-      font-size: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
       line-height: 1.16;
     }
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    
+      }
 
 }
 .socials{
@@ -234,9 +255,6 @@ align-items: center;
 
 .socials__item {  
  position: relative;
- font-size: 10px;
- color: $accent-color;
-
 &:not(:first-child) {
   margin-left: 20px;
 
@@ -250,6 +268,24 @@ align-items: center;
 
   }
 }
+}
+.socials__link{
+font-size: 10px;
+color: $accent-color;
+&:visited {
+  color: $accent-color;
+}
+
+&:hover,
+&:focus {
+  color: $accent-color;
+  fill: $accent-color;
+}
+@media screen and (min-width: 480px){
+font-size: 18px;
+line-height: 1.22;
+}
+
 }
   
   
