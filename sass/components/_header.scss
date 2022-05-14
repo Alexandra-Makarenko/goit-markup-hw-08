@@ -10,27 +10,51 @@
   @media screen and (max-width: 767px) {
     position: relative;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
 }
 .menu{
-@media screen and (max-width: 767px) {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  padding: 48px 40px;
+  @media screen and (max-width: 767px){
+  display: none;
+  }
+  @media screen and (min-width: 768px){
+    display: inline-flex;
+  }
+ 
+  &.is-open{
+    @media screen and (max-width: 767px) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      padding: 48px 40px;
+    
+      background-color: $main-color;
+    }
+  }
 
-  background-color: $main-color;
-}
 }
 .menu-container{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-   overflow: auto;
+  display: flex; 
+  
+    @media screen and (max-width: 767px){
+      flex-direction: column;
+      height: 100%;
+      overflow: auto;
+    }
+      @media screen and (min-width: 768px) {
+        margin-left: 50px;
+      }
+ 
 }
+
 .menu-open-btn,
 .menu-close-btn {
   background-color: transparent;
@@ -47,12 +71,19 @@
   &:focus {
     fill: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   
  
 }
 
 .nav__list {
   display: block; 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__link{
@@ -72,7 +103,13 @@
   &:focus,&.nav__link--current{
     color: $accent-color;
   }
-  
+  @media screen and (min-width: 768px){
+    
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .nav__link--current::after {
     @media screen and (min-width: 768px) {
@@ -91,17 +128,38 @@
 
 
 .nav__item{
-  &:not(:first-child) {
-    margin-top: 32px;
-  }
+ &:not(:first-child) {
+@media screen and (max-width: 767px){
+margin-top: 32px;
 }
+@media screen and (min-width: 768px) {
+  margin-left: 50px;
+}
+     
+    }
+  }
+
+  
 .contact-menu{
+  @media screen and (max-width: 767px){
   margin-top: auto;
+  }
+ 
+
 }
 
 .contacts {
   display: block;
-  margin-bottom: 64px;
+  @media screen and (max-width: 767px){
+    
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 768px){
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+ 
   
 }
 
@@ -119,6 +177,9 @@
 
   &:not(:first-child) {
     margin-top: 32px;
+      @media screen and (min-width: 768px){
+        margin-top: 10px;
+      }
   }
 }
 
@@ -141,6 +202,11 @@
       font-size: 34px;
       line-height: 1.17;
     }
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.16;
+      color: $main-text-color;
+    }
  }
   &:visited {
     color: $main-text-color;
@@ -151,6 +217,10 @@
     color: $accent-color;
     fill: $accent-color;
   }
+    @media screen and (min-width: 768px){
+      font-size: 14px;
+      line-height: 1.16;
+    }
 
 }
 .socials{
