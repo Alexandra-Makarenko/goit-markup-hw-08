@@ -295,6 +295,7 @@ a {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .nav__link:visited {
