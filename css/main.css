@@ -49,6 +49,7 @@ a {
 }
 
 .container {
+  outline: 1px solid red;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -74,6 +75,7 @@ a {
 }
 
 .section {
+  outline: 1px solid green;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
@@ -196,7 +198,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu {
-    margin-left: auto;
+    margin-left: 88px;
   }
 }
 
@@ -620,7 +622,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    margin-top: 30px;
   }
 }
 
@@ -640,11 +641,9 @@ a {
   .benefits {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0;
   }
-}
-
-.benefits__item {
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -653,13 +652,18 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-    margin-bottom: 0;
   }
 }
 
@@ -757,7 +761,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    margin-top: 30px;
   }
 }
 
@@ -777,6 +780,8 @@ a {
   .team {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -829,10 +834,6 @@ a {
   margin-bottom: 16px;
 }
 
-.clients {
-  margin-top: 30px;
-}
-
 @media screen and (max-width: 479px) {
   .clients {
     display: block;
@@ -858,7 +859,8 @@ a {
   .clients {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 50px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -1137,7 +1139,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin-bottom: 40px;
+    margin-bottom: -15px;
   }
 }
 
@@ -1192,6 +1194,7 @@ a {
 @media screen and (max-width: 767px) {
   .projects {
     display: block;
+    margin-top: 40px;
   }
 }
 
@@ -1209,7 +1212,6 @@ a {
 
 .projects__item {
   text-align: left;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1229,7 +1231,6 @@ a {
         flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-    margin-bottom: 0;
   }
 }
 
