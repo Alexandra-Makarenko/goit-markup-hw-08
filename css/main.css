@@ -1058,7 +1058,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
-  margin-right: 12px;
 }
 
 .follow__input::-webkit-input-placeholder {
@@ -1108,6 +1107,7 @@ a {
 @media screen and (min-width: 1200px) {
   .follow__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
